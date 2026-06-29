@@ -1,0 +1,83 @@
+"use client"
+import { IconProps, DevicesIcon, HeadsetIcon } from '@phosphor-icons/react';
+import React from 'react'
+import { Badge } from './ui/badge';
+
+interface accountsProps {
+    id: number,
+    icon: React.ComponentType<IconProps>,
+    num:number,
+    title: string,
+    description: string,
+    badge1: string,
+    badge2: string,
+    badge3: string
+}
+export const AccountsInfo = ({ params }: { params: accountsProps }) => {
+    const Icon = params.icon;
+    return (
+        <>
+            <div className=" bg-[#f8f8f8] dark:bg-[#141313] hover:bg-[#e0dfdf] dark:hover:bg-[#2c2c2c] rounded-xl overflow-hidden md:pb-5 md:py-10 border-2 border-[#e9ae40] max-w-xs md:max-w-2xl ">
+                <div className="px-5 py-3 ">
+                    <div className="flex items-center justify-between p-3 ">
+                        <div className="dark:bg-[#836733] bg-[#ddb481] rounded-xl p-3 w-fit">
+                            < Icon size={32} />
+                        </div>
+                        
+                        <div className="text-2xl text-[#7e7261] font-bold">
+                            <p>0{params.num}</p>
+                        </div>
+                        
+                    </div>
+                    <h1 className="font-bold text-2xl py-8">{params.title}</h1>
+                    <p className="font-extralight dark:text-[#aa9e89] text-[#77736b] md:pr-15 md:text-lg">{params.description}</p>
+                    <div className="md:flex gap-5 py-10 rounded-xs">
+                        <Badge className='dark:bg-black bg-white text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge1}</Badge>
+                        <Badge className='dark:bg-black bg-white text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge2}</Badge>
+                        <Badge className='dark:bg-black bg-white text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge3}</Badge>
+                    </div>
+
+                </div>
+            </div>
+        </>
+    )
+}
+const Accounts = () => {
+    const Accounts: accountsProps[] = [
+        {
+            id: 1,
+            icon: DevicesIcon,
+            num: 1,
+            title: "Regular Account",
+            description: "Perdagangan daring memungkinkan nasabah bertransaksi dengan mudah di mana saja dan kapan saja melalui internet. Dengan HTS (Home Trading System) dan MTS (Mobile Trading System) kami, nasabah dapat bertransaksi dengan mudah dan aman sambil memantau kondisi pasar modal secara real-time secara daring. Bagi pemegang rekening perdagangan daring, KB Valbury Sekuritas tidak menetapkan setoran minimum untuk pembukaan rekening.",
+            badge1: "HTS / MTS",
+            badge2: "NO MINIMUM DEPOSIT",
+            badge3: "REAL-TIME MONITORING"
+
+        },
+        {
+            id: 2,
+            icon: HeadsetIcon,
+            num: 2,
+            title: "Remote Trading",
+            description: "Remote trading memungkinkan investor kami untuk bertransaksi dengan mudah dengan dukungan dari para broker kami yang berpengalaman. Dengan pengalaman lebih dari 20 tahun di industri ini, KB Valbury Sekuritas melatih para broker kami untuk memberikan wawasan dan analisis ahli kepada investor. Untuk membuka akun remote trading di KB Valbury Sekuritas, kami menetapkan setoran awal minimum sebesar Rp25 juta.",
+            badge1: "EXPERT BROKERS",
+            badge2: "20+ YEARS EXPERIENCE",
+            badge3: "ANALISIS AHLI"
+        },
+
+    ]
+    return (
+        <div className='w-full md:max-w-6xl md:mx-auto py-12'>
+            <h1 className='text-4xl font-bold font-serif text-center '>Investment Accounts</h1>
+            <div className="grid lg:grid-cols-[50%_50%] gap-10 justify-items-center py-20  ">
+                {Accounts.map(item => (
+                    <AccountsInfo params={item} key={item.id} />
+                ))}
+            </div>
+        </div>
+
+    )
+}
+
+export default Accounts

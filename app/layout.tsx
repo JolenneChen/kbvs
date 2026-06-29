@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const instrumentSans = Instrument_Sans({subsets:['latin'],variable:'--font-sans'})
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Header/>
           {children}
+          <Footer/>
           </ThemeProvider>
       </body>
     </html>
