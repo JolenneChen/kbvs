@@ -24,19 +24,20 @@ export default async function BlogPage({
     return (
         <>
             <div className="grid lg:grid-cols-4 gap-10 p-12">
-                <div className="lg:col-span-3 bg-white">
+                <div className="lg:col-span-3 ">
                     <h1>{blog.topic}</h1>
                     <Image
                         src={blog.image}
                         alt={blog.topic}
                         width={1200}
-                        height={500}
-                        className=" "
+                        height={600}
+                        className="w-full h-auto rounded-xl object-cover"
+
                     />
 
                     <p>{blog.description}</p>
                 </div>
-                <div className="lg:col-span-1 space-y-14 bg-amber-500">
+                <div className="lg:col-span-1 space-y-14 ">
                     <h2 className="text-xl font-bold">
                         Lihat Artikel Lainnya
                     </h2>
