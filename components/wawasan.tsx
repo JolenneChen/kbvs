@@ -23,7 +23,7 @@ export const WawasanInfo = ({
 
         <>
 
-            <div className="grid grid-cols-1 rounded-xl overflow-hidden pb-2 border-2">
+            <div className="grid grid-cols-1 h-full rounded-xl overflow-hidden pb-2 border-2">
                 <Image
                     src={params.image}
                     alt={params.topic}

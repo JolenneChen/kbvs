@@ -1,12 +1,12 @@
 "use client"
-import { IconProps, DevicesIcon, HeadsetIcon } from '@phosphor-icons/react';
+import { IconProps, DevicesIcon, HeadsetIcon, TrendUpIcon} from '@phosphor-icons/react';
 import React from 'react'
 import { Badge } from './ui/badge';
 
 interface accountsProps {
     id: number,
     icon: React.ComponentType<IconProps>,
-    num:number,
+    num: number,
     title: string,
     description: string,
     badge1: string,
@@ -17,17 +17,17 @@ export const AccountsInfo = ({ params }: { params: accountsProps }) => {
     const Icon = params.icon;
     return (
         <>
-            <div className=" bg-[#f8f8f8] dark:bg-[#141313] hover:bg-[#e0dfdf] dark:hover:bg-[#2c2c2c] rounded-xl overflow-hidden md:pb-5 md:py-10 border-2 border-[#e9ae40] max-w-xs md:max-w-2xl ">
+            <div className=" bg-[#fdfdfd] dark:bg-[#141313] hover:bg-[#eeebeb] dark:hover:bg-[#2c2c2c] rounded-xl overflow-hidden md:pb-5 md:py-10 border-2 border-[#e9ae40] max-w-xs md:max-w-2xl ">
                 <div className="px-5 py-3 ">
                     <div className="flex items-center justify-between p-3 ">
                         <div className="dark:bg-[#836733] bg-[#ddb481] rounded-xl p-3 w-fit">
                             < Icon size={32} />
                         </div>
-                        
+
                         <div className="text-2xl text-[#7e7261] font-bold">
                             <p>0{params.num}</p>
                         </div>
-                        
+
                     </div>
                     <h1 className="font-bold text-2xl py-8">{params.title}</h1>
                     <p className="font-extralight dark:text-[#aa9e89] text-[#77736b] md:pr-15 md:text-lg">{params.description}</p>
@@ -65,12 +65,24 @@ const Accounts = () => {
             badge2: "20+ YEARS EXPERIENCE",
             badge3: "ANALISIS AHLI"
         },
+        {
+
+            id: 3,
+            icon: TrendUpIcon,
+            num: 3,
+            title: "Margin Account",
+            description: "Akun margin adalah jenis akun pialang di mana investor menerima pinjaman dari pialang mereka untuk membeli sekuritas. KB Valbury Sekuritas menawarkan kepada pelanggan kami kesempatan untuk membeli saham dalam jumlah yang lebih besar daripada modal mereka saat ini. Fitur utama akun margin meliputi suku bunga pinjaman sebesar 0,033% per hari (11,9% per tahun) dan batas kredit hingga 1,5 kali portofolio!",
+            badge1: "LOAN INTEREST 0.033%",
+            badge2: "CREDIT LIMIT 1.5X",
+            badge3: "LEVERAGE TRADING"
+
+        }
 
     ]
     return (
-        <div className='w-full md:max-w-6xl md:mx-auto py-12'>
+        <div className='w-full px-12'>
             <h1 className='text-4xl font-bold font-serif text-center '>Investment Accounts</h1>
-            <div className="grid lg:grid-cols-[50%_50%] gap-10 justify-items-center py-20  ">
+            <div className="grid lg:grid-cols-3 gap-10 justify-items-center py-20  ">
                 {Accounts.map(item => (
                     <AccountsInfo params={item} key={item.id} />
                 ))}

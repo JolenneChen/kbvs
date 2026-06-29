@@ -15,7 +15,7 @@ export const wawasans: WawasanProps[] = [
         badges: "TIPS",
         image: "/images/blog1.jpg",
         topic: "Tips dan Spesifikasi Komputer untuk Trading Forex",
-        description: "Trading forex semakin populer di Indonesia, terutama di kalangan mereka yang ingin mendapatkan penghasilan tambahan. Namun, untuk sukses dalam trading forex, memiliki strategi dan pengetahuan saja tidak cukup. Penting untuk memiliki perangkat keras yang mendukung,...",
+        description: "Trading forex semakin populer di Indonesia, terutama di kalangan mereka yang ingin mendapatkan penghasilan tambahan. Namun, untuk sukses dalam trading forex, memiliki strategi dan pengetahuan saja tidak cukup. Penting untuk memiliki perangkat keras yang mendukung, terutama komputer dengan spesifikasi yang sesuai. Artikel ini akan membahas spesifikasi komputer yang ideal untuk trading forex agar Anda dapat trading dengan lancar dan menghindari masalah teknis.",
         featured: true
     },
     {

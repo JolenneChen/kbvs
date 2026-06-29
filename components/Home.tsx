@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Button } from './ui/button'
 const Home = () => {
   return (
-    <div className='p-6 grid grid-cols-1 items-center max-w-8xl mx-auto gap-0 md:gap-12 md:grid-cols-2 md:pt-20 min-h-[calc(100vh-80px)]'>
+    <div className='p-6 grid grid-cols-1 items-center max-w-8xl mx-auto gap-0 md:gap-12 md:grid-cols-2  min-h-[calc(100vh-80px)]'>
       <div className="items-center justify-center md:pl-14">
         <div>
           <Badge className=' bg-[#40392E] text-white border-2 border-[#EB9A02] font-black p-3 tracking-widest my-4'>
@@ -26,7 +26,7 @@ const Home = () => {
       </div>
 
       <div className="justify-center items-center md:pt-20 pt-10">
-        <Image src={"/images/Promo.png"} width={700} height={300} alt="Promo" loading='eager' className='max-w-full h-auto'></Image>
+        <Image src={"/images/Promo.jpg"} width={700} height={300} alt="Promo" loading='eager' className='max-w-full h-auto'></Image>
       </div>
 
     </div>
