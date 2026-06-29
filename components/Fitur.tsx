@@ -1,5 +1,6 @@
 "use client"
 import { IconProps, LightningIcon, HandTapIcon, ChartBarIcon } from "@phosphor-icons/react"
+import Link from "next/link";
 interface FiturProps {
     id: number,
     icon: React.ComponentType<IconProps>,
@@ -10,15 +11,20 @@ export const FiturInfo = ({ params }: { params: FiturProps }) => {
     const Icon = params.icon;
     return (
         <>
-            <div className="grid grid-cols-1 bg-white dark:bg-black rounded-xl overflow-hidden md:pb-5 py-5 border-2">
-                <div className="px-5 py-3 ">
-                    <div className="bg-[#c99a43] rounded-xl p-3 w-fit shadow-2xl shadow-amber-200">
-                        < Icon size={32} />
+            <Link href={"https://regol.kbvalbury.com/#/register/MM03"}>
+                <div className="grid grid-cols-1 hover:bg-[#242424] cursor-pointer bg-black rounded-xl overflow-hidden pb-5 border-2 border-[#4d4d4d]">
+                    <div className="px-5 py-3 ">
+                        <div className="flex items-center py-3">
+                            <div className="bg-[#c99a43] rounded-xl p-3 w-fit shadow-2xl shadow-amber-200 ">
+                                < Icon size={32} />
+                            </div>
+                            <h1 className="font-bold text-2xl py-4 justify-self-end pl-5">{params.title}</h1>
+                        </div>
+
+                        <p className="font-extralight dark:text-[#aa9e89] text-[#77736b] max-w-sm">{params.description}</p>
                     </div>
-                    <h1 className="font-bold text-2xl py-4">{params.title}</h1>
-                    <p className="font-extralight dark:text-[#aa9e89] text-[#77736b] max-w-sm">{params.description}</p>
                 </div>
-            </div>
+            </Link>
         </>
     )
 }
@@ -29,7 +35,7 @@ const Fitur = () => {
             id: 1,
             icon: LightningIcon,
             title: "Buka Akun Cepat",
-            description: "100% Online, Tanpa Minimum Deposit. Proses pendaftaran kami instan tanpa ribet."
+            description: "100% Online, Tanpa Minimum Deposit. Proses pendaftaran kami instant tanpa ribet."
         },
         {
             id: 2,
@@ -45,10 +51,10 @@ const Fitur = () => {
         }
     ]
     return (
-        <div className="relative p-12 md:py-20 bg-[#f3f2f0] dark:bg-[#252525]">
+        <div className="relative md:p-20 md:py-10 p-12 bg-[#252525]">
             <div className=" w-full pb-6" >
-                <h1 className=" text-4xl font-bold">Fitur Unggulan <span className="text-[#EB9A02]">KB ARA</span></h1>
-                <p className="max-w-2xl py-5 dark:text-[#aa9e89] text-[#77736b]">Dilengkapi dengan fitur-fitur untuk membantu Anda mengambil keputusan investasi yang lebih baik dan lebih cepat.</p>
+                <h1 className=" text-4xl font-bold text-white">Fitur Unggulan <span className="text-[#EB9A02]"><br /> KB ARA</span></h1>
+                <p className="max-w-2xl py-5 text-[#aa9e89]  text-justify">Dilengkapi dengan fitur-fitur untuk membantu Anda mengambil keputusan investasi yang lebih baik dan lebih cepat.</p>
             </div>
             <div className="grid lg:grid-cols-3 gap-10 ">
                 {fitur.map(item => (

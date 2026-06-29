@@ -8,7 +8,6 @@ export default function Page() {
       
       <Home/>
       <Fitur />
-      <div className="m-10"></div>
       <Join/>
     </div>
   )

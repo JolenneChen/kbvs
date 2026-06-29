@@ -27,9 +27,10 @@ export default async function BlogPage({
                 <div className="lg:col-span-3 ">
                     <h1>{blog.topic}</h1>
                     <Image
+                        loading="eager"
                         src={blog.image}
                         alt={blog.topic}
-                        width={1200}
+                        width={1000}
                         height={600}
                         className="w-full h-auto rounded-xl object-cover"
 
@@ -37,7 +38,7 @@ export default async function BlogPage({
 
                     <p>{blog.description}</p>
                 </div>
-                <div className="lg:col-span-1 space-y-14 ">
+                <div className="lg:col-span-1 space-y-6 ">
                     <h2 className="text-xl font-bold">
                         Lihat Artikel Lainnya
                     </h2>

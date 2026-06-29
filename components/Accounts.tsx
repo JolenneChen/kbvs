@@ -17,10 +17,10 @@ export const AccountsInfo = ({ params }: { params: accountsProps }) => {
     const Icon = params.icon;
     return (
         <>
-            <div className=" bg-[#fdfdfd] dark:bg-[#141313] hover:bg-[#eeebeb] dark:hover:bg-[#2c2c2c] rounded-xl overflow-hidden md:pb-5 md:py-10 border-2 border-[#e9ae40] max-w-xs md:max-w-2xl ">
+            <div className=" bg-[#141313]  hover:bg-[#2c2c2c] rounded-xl overflow-hidden md:pb-5 md:py-10 border-2 border-[#e9ae40] max-w-xs md:max-w-2xl ">
                 <div className="px-5 py-3 ">
                     <div className="flex items-center justify-between p-3 ">
-                        <div className="dark:bg-[#836733] bg-[#ddb481] rounded-xl p-3 w-fit">
+                        <div className="bg-[#836733] text-white rounded-xl p-3 w-fit">
                             < Icon size={32} />
                         </div>
 
@@ -29,12 +29,12 @@ export const AccountsInfo = ({ params }: { params: accountsProps }) => {
                         </div>
 
                     </div>
-                    <h1 className="font-bold text-2xl py-8">{params.title}</h1>
-                    <p className="font-extralight dark:text-[#aa9e89] text-[#77736b] md:pr-15 md:text-lg">{params.description}</p>
+                    <h1 className="font-bold md:text-2xl text-xl md:py-8 text-white">{params.title}</h1>
+                    <p className="font-extralight text-[#aa9e89] md:pr-15 md:text-lg text-[12px] text-justify">{params.description}</p>
                     <div className="md:flex gap-5 py-10 rounded-xs">
-                        <Badge className='dark:bg-black bg-white text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge1}</Badge>
-                        <Badge className='dark:bg-black bg-white text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge2}</Badge>
-                        <Badge className='dark:bg-black bg-white text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge3}</Badge>
+                        <Badge className='bg-black text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge1}</Badge>
+                        <Badge className='bg-black text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge2}</Badge>
+                        <Badge className='bg-black text-[#e9ae40] border-2 border-[#e9ae40] p-3'>{params.badge3}</Badge>
                     </div>
 
                 </div>
@@ -80,8 +80,8 @@ const Accounts = () => {
 
     ]
     return (
-        <div className='w-full px-12'>
-            <h1 className='text-4xl font-bold font-serif text-center '>Investment Accounts</h1>
+        <div className='w-full px-12 bg-black'>
+            <h1 className='text-4xl font-bold font-serif text-center text-white'>Investment Accounts</h1>
             <div className="grid lg:grid-cols-3 gap-10 justify-items-center py-20  ">
                 {Accounts.map(item => (
                     <AccountsInfo params={item} key={item.id} />

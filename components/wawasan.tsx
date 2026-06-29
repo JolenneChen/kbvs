@@ -23,17 +23,17 @@ export const WawasanInfo = ({
 
         <>
 
-            <div className="grid grid-cols-1 h-full rounded-xl overflow-hidden pb-2 border-2">
+            <div className="grid grid-cols-1 rounded-xl overflow-hidden pb-2 border-2">
                 <Image
                     src={params.image}
                     alt={params.topic}
                     width={800}
                     height={500}
                     loading='eager'
-                    className={`w-full object-cover ${imageHeight}`} />
+                    className={`w-full object-cover ${compact ? "h-32" : imageHeight}`} />
                 <Badge className=" m-3 w-fit rounded-sm dark:bg-[#505042] bg-[#f5f5f5] dark:text-[#fdd283] text-[#644b2a] border border-[#EB9A02]">{params.badges}</Badge>
-                <div className="px-5 py-3">
-                    <h1 className={`font-bold pb-2 ${compact
+                <div className={compact ? "p-3" : "px-5 py-3 flex flex-col flex-1 "}>
+                    <h1 className={`font-bold pb-2 line-clamp-3 ${compact
                         ? "text-xl"
                         : params.featured
                             ? "text-base"
@@ -42,7 +42,7 @@ export const WawasanInfo = ({
                         {params.topic}
                     </h1>
                     {!compact && (
-                        <p>
+                        <p className="line-clamp-4 flex-1">
                             {params.description}
                         </p>
                     )}
@@ -53,7 +53,7 @@ export const WawasanInfo = ({
                         </Link>
 
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -77,7 +77,8 @@ const Wawasan = () => {
             <div className="grid lg:grid-cols-3 gap-6">
                 {featured[0] && (
                     <div className="lg:col-span-2">
-                        <WawasanInfo params={featured[0]} />
+                        <WawasanInfo params={featured[0]}
+                        imageHeight="md:h-96 h-55" />
                     </div>
                 )}
 
