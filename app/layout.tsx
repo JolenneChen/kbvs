@@ -17,7 +17,7 @@ export const metadata = {
   title: "MiniSaham",
   openGraph: {
     title: "MiniSaham",
-    images: ["https://minisaham.com/logoKB.jpg"],
+    images: ["https://minisaham.com/images/logoKB.jpg"],
     url: "https://minisaham.com/",
   },
 }
