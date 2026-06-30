@@ -11,14 +11,14 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black border-b border-[#FFB958] shadow-md shadow-[#FFB958]/30">
-      <div className=" h-25 px-6 items-center md:grid md:grid-cols-4 w-full mx-auto flex justify-between">
+      <div className=" max-w-7xl mx-auto flex items-center justify-between h-24 px-6">
 
         {/* Logo */}
         <Link
           href="/"
           className="text-2xl font-extrabold text-[#FFB958] col-span-3"
         >
-          <Image src={"/images/kbval.png"} alt={"kbval"} width={400} height={100}></Image>
+          <Image src={"/images/kbval.png"} alt={"kbval"} width={400} height={100} className="w-auto h-auto"></Image>
         </Link>
 
         {/* Desktop Navigation */}

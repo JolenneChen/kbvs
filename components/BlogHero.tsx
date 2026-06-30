@@ -18,7 +18,7 @@ const BlogHero = () => {
                 </p>
                 <div className="items-center justify-center ">
                     <Image
-                        src={'/Images/Transaction.png'}
+                        src={'/images/Transaction.png'}
                         alt={'Transttable'}
                         width={900}
                         height={300}
@@ -44,7 +44,7 @@ const BlogHero = () => {
                 <div className="items-center justify-center ">
                     
                     <Image
-                        src={'/Images/Transaction1.png'}
+                        src={'/images/Transaction1.png'}
                         alt={'Transttable'}
                         width={900}
                         height={300}

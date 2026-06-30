@@ -13,7 +13,7 @@ const Home = () => {
             ONLINE TRADING APPLICATION
           </Badge>
         </div>
-        <Image src={'/Images/smart.png'} alt={'Logo'} width={650} height={400}></Image>
+        <Image src={'/images/smart.png'} alt={'Logo'} width={650} height={400} className='w-auto'></Image>
         <div className=" my-6 md:my-8 px-2 max-w-2xl ">
           <p className='text-[15px] md:text-2xl dark:text-[#aa9e89] text-[#77736b]'>
             Your Tools for Better Investment Decision <br />
@@ -28,7 +28,7 @@ const Home = () => {
       </div>
 
       <div className="justify-self-end items-center md:pt-20 pt-10">
-        <Image src={"/images/Promo.png"} width={700} height={300} alt="Promo" loading='eager' className='max-w-full h-auto width-auto'></Image>
+        <Image src={"/images/Promo.png"} width={700} height={300} alt="Promo" loading='eager' className='max-w-full h-auto w-auto'></Image>
       </div>
 
     </div>

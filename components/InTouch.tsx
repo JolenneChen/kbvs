@@ -11,7 +11,7 @@ const InTouch = () => {
             <div className="grid md:grid-cols-[40%_60%] md:gap-20 items-start ">
                 <div className=" justify-center text-center bg-linear-to-br from-[#966d35] to-[#2e1f03]  rounded-2xl">
                     <div className="md:max-w-md  max-w-xs mx-auto my-10 ">
-                        <div className="bg-[#634910]  text-[#f1bc5a] rounded-xl justify-center inline-flex p-3 mb-5 border border-[#EB9A02]">
+                        <div className="bg-[#634910]  text-[#f1bc5a] rounded-xl justify-center inline-flex p-3 mb-5 border w-auto border-[#EB9A02]">
                             <Image src={'/images/wa.png'} alt={'qrcode'} width={300} height={300} className='w-40'></Image>
                         </div>
 

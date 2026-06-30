@@ -11,7 +11,7 @@ const Join = () => {
 
                 <div className="grid md:grid-cols-2 ">
                     <div className=" justify-center items-center md:pt-8 pt-10">
-                        <Image src={"/Images/NewPromo.png"} alt={"promo"} width={850} height={300} className="max-w-full h-auto width-auto rounded-4xl"></Image>
+                        <Image src={"/images/NewPromo.png"} alt={"promo"} width={850} height={300} className="max-w-full h-auto w-auto rounded-4xl"></Image>
                     </div>
                     <div className="max-w-3xl">
                         <h1 className='md:text-4xl text-xl font-bold font-sans mx-auto pt-8 text-[#473d29]'>BUKA REKENING ONLINE UNTUK PERUSAHAAN, KOMUNITAS, UNIVERSITAS ATAU GRUP ANDA !</h1>

@@ -47,12 +47,6 @@ export const WawasanInfo = ({
                         </p>
                     )}
 
-                    <div className=" mt-6">
-                        <Link href={`/ArticleBlog/${params.slug}`} className='font-bold hover:underline inline-flex text-[#f3c56f]'>
-                            Read Report <ArrowRightIcon className='mt-1 ml-2' />
-                        </Link>
-
-                    </div>
 
                 </div>
 

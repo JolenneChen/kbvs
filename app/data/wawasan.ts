@@ -1,7 +1,7 @@
 
 export interface WawasanProps {
     id: number,
-    slug: string,
+
     badges: string,
     image: string,
     topic: string,
@@ -11,7 +11,7 @@ export interface WawasanProps {
 export const wawasans: WawasanProps[] = [
     {
         id: 1,
-        slug: "Tips-dan-Spesifikasi-Komputer-untuk-Trading-Forex",
+
         badges: "TIPS",
         image: "/images/blog1.jpg",
         topic: "Tips dan Spesifikasi Komputer untuk Trading Forex",
@@ -20,7 +20,7 @@ export const wawasans: WawasanProps[] = [
     },
     {
         id: 2,
-        slug: "Rekomendasi-Komputer-untuk-Trading-Saham",
+
         badges: "REKOMENDASI",
         image: "/images/blog2.jpg",
         topic: "Rekomendasi Komputer untuk Trading Saham: Desktop vs Laptop, Mana yang Lebih Baik?",
@@ -29,7 +29,7 @@ export const wawasans: WawasanProps[] = [
     },
     {
         id: 3,
-        slug: "Cara-Trading-Saham-Online-Bagi-Pemula",
+
         badges: "PEMULA",
         image: "/images/blog3.jpg",
         topic: "Cara Trading Saham Online Bagi Pemula",
@@ -39,7 +39,7 @@ export const wawasans: WawasanProps[] = [
     {
         id: 4,
         badges: "EDUKASI",
-        slug: "tahui-Istilah-dalam-Dunia-Trading-Saham-Online",
+
         image: "/images/blog4.jpg",
         topic: "Mengetahui Istilah dalam Dunia Trading Saham Online",
         description: "Terdapat berbagai istilah dalam dunia trading online yang perlu dipahami agar dapat sukses dalam berinvestasi. Istilah-istilah ini sering digunakan oleh para trader saham untuk berkomunikasi dan memahami situasi pasar dengan lebih baik. Salah satu istilah yang sering...",
@@ -47,7 +47,7 @@ export const wawasans: WawasanProps[] = [
     },
     {
         id: 5,
-        slug: "How-to-Trade-Stocks-for-Beginners",
+
         badges: "BEGINNER GUIDE",
         image: "/images/blog5.jpg",
         topic: "How to Trade Stocks for Beginners",
