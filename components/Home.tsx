@@ -2,10 +2,9 @@
 import { Badge } from './ui/badge'
 import { ShieldCheckIcon, TrendUpIcon } from '@phosphor-icons/react'
 import Image from 'next/image'
-import { Button } from './ui/button'
 const Home = () => {
   return (
-    <div className='grid grid-cols-1 px-6 items-center max-w-8xl mx-auto gap-0 md:gap-12 md:grid-cols-2 bg-black'>
+    <div className='grid grid-cols-1 px-6 items-center max-w-8xl mx-auto gap-0 md:gap-12 md:grid-cols-2 bg-black pb-12'>
       <div className="items-center justify-center md:pl-14 inset-y-0">
         <div>
           <Badge className=' bg-[#40392E] text-white text-xs md:text-2xl border-2 border-[#EB9A02] font-black p-4 md:p-6  tracking-widest my-7 md:my-10'>

@@ -28,10 +28,12 @@ const Footer = () => {
                         <h1 className='text-md md:text-md font-bold md:pt-5 md:pl-5 text-white'>Download</h1>
 
                     </div>
-                    <div className="md:grid md:grid-cols-1 flex "></div>
-                    <Link href={'https://play.google.com/store/apps/details?id=com.ara.kbvalbury'} > <Image src={'/images/Google.png'} alt={'google'} width={150} height={200} className='w-auto'></Image></Link>
-                    <Link href={'https://apps.apple.com/id/app/kb-ara/id1668965822'} > <Image src={'/images/AppStore.png'} alt={'google'} width={150} height={200} className='w-auto'></Image></Link>
-                    <Link href={'https://files.kbvalbury.com/KB%20ARA.rar'} > <Image src={'/images/Windows.png'} alt={'google'} width={150} height={200} className='w-auto'></Image ></Link>
+                    <div className="md:grid md:grid-cols-1 flex w-full pt-3">
+                        <Link href={'https://play.google.com/store/apps/details?id=com.ara.kbvalbury'} > <Image src={'/images/Google.png'} alt={'google'} width={150} height={200} className='w-30 md:w-40'></Image></Link>
+                        <Link href={'https://apps.apple.com/id/app/kb-ara/id1668965822'} > <Image src={'/images/AppStore.png'} alt={'google'} width={150} height={200} className='w-30 md:w-40'></Image></Link>
+                        <Link href={'https://files.kbvalbury.com/KB%20ARA.rar'} > <Image src={'/images/Windows.png'} alt={'google'} width={150} height={200} className='w-30 md:w-40'></Image ></Link>
+                    </div>
+
 
 
                 </div>

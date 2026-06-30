@@ -18,7 +18,7 @@ export const FiturInfo = ({ params }: { params: FiturProps }) => {
                             <div className="bg-[#c99a43] rounded-xl p-3 w-fit shadow-2xl shadow-amber-200 ">
                                 < Icon size={32} />
                             </div>
-                            <h1 className="font-bold text-2xl py-4 justify-self-end pl-5">{params.title}</h1>
+                            <h1 className="font-bold text-2xl py-4 justify-self-end pl-5 text-white">{params.title}</h1>
                         </div>
 
                         <p className="font-extralight dark:text-[#aa9e89] text-[#77736b] max-w-sm">{params.description}</p>

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ListIcon, XIcon } from "@phosphor-icons/react";
-import { Button } from "./ui/button";
 import Image from "next/image";
 
 export default function Header() {
@@ -18,7 +17,13 @@ export default function Header() {
           href="/"
           className="text-2xl font-extrabold text-[#FFB958] col-span-3"
         >
-          <Image src={"/images/kbval.png"} alt={"kbval"} width={400} height={100} className="w-auto h-auto"></Image>
+          <Image
+            src="/images/kbval.png"
+            alt="kbval"
+            width={240}
+            height={60}
+            className="h-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -65,7 +70,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black border-t border-[#FFB958]">
+        <div className="md:hidden text-white bg-black border-t border-[#FFB958]">
 
           <Link
             href="/"
