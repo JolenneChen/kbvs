@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className='p-6 grid grid-cols-1 justify-center  text-center mx-auto bg-black min-h-[calc(100vh-80px)]'>
       <div className="flex justify-center">
-        <Image src={'/images/NewPromo.jpg'} alt={'promo'} width={820} height={600}  className='w-auto'></Image>
+        <Image src={'/images/FullPromo.jpg'} alt={'promo'} width={820} height={600}  className='w-auto'></Image>
       </div>
       <div className="pt-8">
         <h1 className=' text-2xl md:text-7xl font-bold md:max-w-6xl mx-auto text-white '>Layanan Investasi Keuangan Berkualitas Terbaik</h1>
