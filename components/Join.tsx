@@ -8,9 +8,9 @@ const Join = () => {
                 <Image
                     src={'/images/FullPromo.jpg'}
                     alt={'Transttable'}
-                    width={900}
+                    width={1200}
                     height={300}
-                    className="hidden md:block w-4xl " />
+                    className="hidden md:block " />
             </div>
 
             <div className="grid grid-cols-1 gap-5">

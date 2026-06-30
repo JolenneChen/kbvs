@@ -10,23 +10,21 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black border-b border-[#FFB958] shadow-md shadow-[#FFB958]/30">
-      <div className=" max-w-7xl mx-auto flex items-center justify-between h-24 px-6">
-
-        {/* Logo */}
-        <Link
+      <div className=" max-w-[1700px] mx-auto flex items-center justify-between h-24 px-6">
+        <div className="">
+          <Link
           href="/"
           className="text-2xl font-extrabold text-[#FFB958] col-span-3"
         >
           <Image
             src="/images/kbval.png"
             alt="kbval"
-            width={240}
+            width={340}
             height={60}
             className="h-auto"
           />
         </Link>
-
-        {/* Desktop Navigation */}
+        </div>
         <nav className="hidden md:flex items-center gap-10 text-[#ffffff] col-span-1">
           <Link
             href="/"
