@@ -22,14 +22,7 @@ const Join = () => {
                     height={1000}
                     className="block md:hidden w-full "
                 />
-                <Image
-                    src="/images/promo2.jpg"
-                    alt="Hero"
-                    loading="eager"
-                    width={900}
-                    height={1000}
-                    className="block md:hidden w-full "
-                />
+                
             </div>
 
 

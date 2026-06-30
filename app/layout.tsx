@@ -6,13 +6,21 @@ import { cn } from "@/lib/utils";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const instrumentSans = Instrument_Sans({subsets:['latin'],variable:'--font-sans'})
+const instrumentSans = Instrument_Sans({ subsets: ['latin'], variable: '--font-sans' })
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
 
+export const metadata = {
+  title: "MiniSaham",
+  openGraph: {
+    title: "MiniSaham",
+    images: ["https://minisaham.com/logoKB.jpg"],
+    url: "https://minisaham.com/",
+  },
+}
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,10 +34,10 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider>
-          <Header/>
+          <Header />
           {children}
-          <Footer/>
-          </ThemeProvider>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )
